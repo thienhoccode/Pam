@@ -100,6 +100,52 @@ input{background:#fff;border:3px solid #ffc2d9}
 .win{background:#fff3e0}
 svg [fill="#e3253a"]{fill:#ff6b8f}
 svg [fill="#ff8a98"]{fill:#ffb3c4}
+#float,#float *{pointer-events:none}
+.pal button,.sundae{touch-action:manipulation}
+.glass{left:35px;width:120px;height:296px;border:4px solid rgba(150,200,235,.85);border-top-width:3px;border-radius:3px 3px 54px 54px/3px 3px 70px 70px;background:linear-gradient(90deg,rgba(255,255,255,.35),rgba(255,255,255,.05) 40%,rgba(180,220,245,.2));z-index:3;pointer-events:none}
+.glass::after{content:"";position:absolute;left:9px;top:16px;bottom:62px;width:7px;border-radius:4px;background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.15))}
+.stem{left:84px;width:22px;height:40px;bottom:16px;background:linear-gradient(90deg,rgba(150,200,235,.9),rgba(255,255,255,.95) 45%,rgba(150,200,235,.9));border-radius:6px;opacity:1}
+.base{left:38px;width:114px;height:22px;bottom:4px;background:radial-gradient(ellipse at 50% 30%,#fff,rgba(150,200,235,.9) 75%);border-radius:50%;opacity:1}
+.stack{left:39px;right:39px;bottom:48px;z-index:2}
+.sc{width:78%;height:20px;background:linear-gradient(#5a2a18,#2e140b);border-radius:8px 8px 22px 22px}
+.ic{width:100%;height:38px;border-radius:50% 50% 12px 12px/40% 40% 12px 12px}
+.ic.va{background:radial-gradient(circle at 30% 40%,#fff3d6 0 3px,transparent 4px),#e8c99a}
+.ic.ch{background:radial-gradient(circle at 22% 35%,#c58b4e 0 2.5px,transparent 3.5px),radial-gradient(circle at 70% 55%,#c58b4e 0 2.5px,transparent 3.5px),#5a2f1f}
+.ss{width:100%;height:16px;background:linear-gradient(#f0485c,#c4172b);border-radius:4px}
+.ba{width:78%;height:8px;margin-top:-1px;background:radial-gradient(circle at 50% 50%,#c9a227 0 1.5px,transparent 2.5px),#ffe58a;border:1px solid #e0b84a;border-radius:50%;position:relative;left:-5px}
+.ba.o{left:6px}
+.al{width:84%;height:9px;background:repeating-linear-gradient(90deg,#b9803f 0 6px,transparent 6px 11px);border-radius:5px}
+.wh{position:relative;width:108%;height:64px;margin-top:-30px;background:repeating-linear-gradient(172deg,#fff 0 7px,#efe5da 7px 9px);border:2px solid #efe5da;border-radius:50% 50% 26px 26px/85% 85% 26px 26px}
+.ri{width:58%;height:6px;margin-top:2px;background:#3b1d12;border-radius:4px;position:relative;z-index:1}
+.ri.o{width:44%}
+.stack.wf .wh::before{content:"";position:absolute;left:-14px;top:-26px;width:50px;height:50px;background:repeating-linear-gradient(45deg,#e9b660 0 3px,#f6cf84 3px 6px);clip-path:polygon(0 100%,55% 0,100% 62%);transform:rotate(-12deg);z-index:-1}
+.sundae{width:215px;height:545px}
+#sv{width:100%;height:100%;display:block;overflow:visible}
+.e{transform-box:fill-box;transform-origin:center}
+.pp{animation:pp .35s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pp{from{transform:scale(.3);opacity:0}}
+
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0 4px}
+.chips a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;background:#fff;border:2px solid #ffc2d9;border-radius:99px;padding:4px 14px;box-shadow:0 3px 0 #ffc2d9;transition:transform .15s}
+.chips a:hover{transform:translateY(-2px)}
+.chips a:focus-visible,#heroM:focus-visible{outline:3px solid #ffb300;outline-offset:3px;border-radius:16px}
+.dayline{font-weight:700;color:#ec5f93;margin:10px 0 0}
+.prog{height:10px;border-radius:99px;background:#ffe3ef;margin:10px 4px 0;overflow:hidden}
+.prog i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#ff9bc0,#c3a1ff);transition:width .35s}
+#gift{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;background:rgba(122,61,88,.45);padding:20px}
+#gift.on{display:flex}
+.gbox{background:#fffafc;border:3px solid #ffc2d9;border-radius:32px;padding:22px 20px;max-width:340px;text-align:center;box-shadow:0 0 0 6px #fff,0 16px 40px rgba(240,107,154,.35);animation:pp .45s cubic-bezier(.3,1.6,.5,1)}
+.gico{font-size:56px;line-height:1}
+#wish{font-size:22px;line-height:1.35;min-height:140px;padding:18px 16px;color:#7a1f4a;background:linear-gradient(135deg,#fff0f6,#f3eaff);border:4px solid #f06b9a;box-shadow:0 6px 0 #ffc2d9,0 14px 28px rgba(240,107,154,.28)}
+#g3{background:linear-gradient(135deg,#ffe3ef,#efe6ff);border:4px solid #f06b9a}
+#g3 h2{font-size:32px}
+.msg{font-size:21px;font-weight:800;line-height:1.4;color:#7a1f4a;margin:12px 0 18px}
+.gbox h3{margin:6px 0;color:#ec5f93;font-size:24px}
+.gbox p{font-weight:700;margin:8px 0 14px}
+.wish.flip{animation:wflip .45s}
+@keyframes wflip{from{transform:rotateX(70deg);opacity:.3}}
+#toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 110px);transform:translate(-50%,20px);background:#7a3d58;color:#fff;padding:8px 18px;border-radius:99px;font-weight:700;font-size:15px;opacity:0;pointer-events:none;transition:.25s;z-index:60;max-width:90vw;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
 </style>
 </head>
 <body>
@@ -108,8 +154,9 @@ svg [fill="#ff8a98"]{fill:#ffb3c4}
 <span class="tag">Swensen’s ParcMall</span>
 <h1>Happy 20/10!</h1>
 <p>Gửi các nàng quản lí và nhân viên nữ của <b>Pam Swensen</b> 💖</p>
-<div id="heroM" role="button" aria-label="Chạm vào Pam"></div>
+<div id="heroM" role="button" tabindex="0" aria-label="Chạm vào Pam"></div>
 <div class="bubble" id="heroB">Chào các nàng! Pam đây, chạm vào Pam đi nè 🍨</div>
+<p class="dayline" id="dayline"></p><nav class="chips" aria-label="Đi nhanh tới"><a href="#g1">🍨 Làm ly kem</a><a href="#g2">🎁 Nhận lời chúc</a><a href="#g3">💌 Lời nhắn</a></nav>
 </header>
 
 <section id="g1">
@@ -117,7 +164,30 @@ svg [fill="#ff8a98"]{fill:#ffb3c4}
 <p>Bạn nhớ công thức rồi đúng không? Làm đúng thứ tự nha, bấm sai là Pam trêu đó!</p>
 <ol class="steps" id="steps" style="display:none"></ol>
 <div class="hint" id="hint"></div>
-<div class="sundae"><div class="glass"></div><div class="stem"></div><div class="base"></div><div class="stack" id="stack"></div></div>
+<div class="prog" id="prog" role="progressbar" aria-label="Tiến độ làm kem" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i id="pbar"></i></div>
+<div class="sundae"><svg id="sv" viewBox="0 -24 190 494" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ly Coit Tower"><defs><clipPath id="bw"><path d="M33 140 L59 340 Q62 374 83 388 L107 388 Q128 374 131 340 L157 140Z"/></clipPath><linearGradient id="gsc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a2a18"/><stop offset="1" stop-color="#2a110a"/></linearGradient><linearGradient id="gss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5566a"/><stop offset="1" stop-color="#c4172b"/></linearGradient><radialGradient id="gva" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff6e0"/><stop offset="1" stop-color="#e3c08c"/></radialGradient><radialGradient id="gch" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8a5240"/><stop offset="1" stop-color="#3b1c10"/></radialGradient><radialGradient id="gcy" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ff8a8a"/><stop offset=".6" stop-color="#d6202f"/><stop offset="1" stop-color="#a50f1d"/></radialGradient><linearGradient id="ggl" x1="0" x2="1"><stop offset="0" stop-color="#9fd0ee"/><stop offset=".45" stop-color="#fff"/><stop offset="1" stop-color="#9fd0ee"/></linearGradient><pattern id="gwf" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#f6cf84"/><path d="M0 0H7M0 0V7" stroke="#d9a24a" stroke-width="1.2"/></pattern></defs>
+<ellipse cx="95" cy="458" rx="58" ry="8" fill="#000" opacity=".1"/>
+<path d="M33 140 L59 340 Q62 374 83 388 L107 388 Q128 374 131 340 L157 140Z" fill="rgba(210,235,250,.35)"/>
+<g clip-path="url(#bw)">
+<g class="e" id="e-sc0" style="display:none"><path d="M36 336 Q95 322 154 336 L154 392 L36 392Z" fill="url(#gsc)"/></g>
+<g class="e" id="e-ic1" style="display:none"><ellipse class="scp" cx="95" cy="314" rx="43" ry="31" fill="url(#gva)"/><ellipse cx="85" cy="302" rx="9" ry="5" fill="#fff" opacity=".35"/></g>
+<g class="e" id="e-ss2" style="display:none"><path d="M56 282 Q95 262 134 282 Q137 294 128 296 Q124 306 118 297 Q95 306 72 297 Q64 305 62 295 Q53 293 56 282Z" fill="url(#gss)"/></g>
+<g class="e" id="e-ba3" style="display:none"></g><g class="e" id="e-al3" style="display:none"></g>
+<g class="e" id="e-ic4" style="display:none"><ellipse class="scp" cx="95" cy="212" rx="55" ry="36" fill="url(#gva)"/><ellipse cx="82" cy="198" rx="10" ry="6" fill="#fff" opacity=".3"/></g>
+<g class="e" id="e-sc5" style="display:none"><path d="M64 196 Q95 176 126 196 Q130 206 122 206 Q118 218 112 207 Q95 212 80 207 Q72 217 68 206 Q60 205 64 196Z" fill="url(#gsc)"/></g>
+<g class="e" id="e-al5" style="display:none"></g><g class="e" id="e-ba5" style="display:none"></g>
+</g>
+<path d="M33 140 L59 340 Q62 374 83 388 L107 388 Q128 374 131 340 L157 140Z" fill="none" stroke="url(#ggl)" stroke-width="3.5"/>
+<rect x="84" y="384" width="22" height="32" rx="6" fill="url(#ggl)"/>
+<path d="M82 410 Q72 428 40 438 Q95 458 150 438 Q118 428 108 410Z" fill="url(#ggl)" stroke="#9fd0ee" stroke-width="1.5"/>
+<path d="M44 152 L63 328" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".65" fill="none"/>
+<g class="e" id="e-wf" style="display:none"><polygon points="30,120 52,40 98,92" fill="url(#gwf)" stroke="#d9a24a" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g class="e" id="e-wh6" style="display:none" fill="#fff" stroke="#eadfd3" stroke-width="1.5"><ellipse cx="95" cy="142" rx="68" ry="20"/><ellipse cx="95" cy="120" rx="54" ry="19"/><ellipse cx="95" cy="100" rx="40" ry="17"/><ellipse cx="95" cy="83" rx="26" ry="14"/><path d="M82 78 Q95 56 108 78 Q96 86 82 78Z"/></g>
+<g class="e" id="e-ri7" style="display:none" fill="none" stroke="#3b1d12" stroke-width="3" stroke-linecap="round"><path d="M44 134 q9 -8 18 0 t18 0 t18 0 t18 0 t18 0 t18 0"/><path d="M54 114 q8 -7 16 0 t16 0 t16 0 t16 0 t16 0"/><path d="M66 96 q7 -6 14 0 t14 0 t14 0 t14 0"/></g>
+<g class="e" id="e-al7" style="display:none"></g>
+<g class="e" id="e-cy8" style="display:none"><path d="M96 48 Q100 34 108 26" stroke="#5a8a2e" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="95" cy="56" r="12" fill="url(#gcy)"/><circle cx="90" cy="51" r="3.5" fill="#fff" opacity=".7"/></g>
+<g class="e" id="e-fl9" style="display:none"><line x1="100" y1="50" x2="100" y2="-18" stroke="#d1ad6e" stroke-width="2.5" stroke-linecap="round"/><rect x="102" y="-18" width="48" height="30" fill="#fff"/><rect x="102" y="-18" width="48" height="4.3" fill="#d42a3a"/><rect x="102" y="-9.4" width="48" height="4.3" fill="#d42a3a"/><rect x="102" y="-.8" width="48" height="4.3" fill="#d42a3a"/><rect x="102" y="7.8" width="48" height="4.2" fill="#d42a3a"/><rect x="102" y="-18" width="22" height="16" fill="#2a3f8f"/></g>
+</svg></div>
 <div class="pal" id="pal"></div>
 <button id="reset">Làm ly mới</button>
 <div class="win" id="win"></div>
@@ -126,18 +196,20 @@ svg [fill="#ff8a98"]{fill:#ffb3c4}
 <section id="g2">
 <h2>Chọn viên kem, nhận lời chúc 🍦</h2>
 <input id="name" placeholder="Nhập tên của bạn nè" maxlength="20" aria-label="Tên của bạn">
-<div class="seg" id="seg"><button data-m="sweet">😇 Ngọt ngào</button><button data-m="tease">😜 Trêu ghẹo</button><button data-m="mix" class="on">🎲 Ngẫu nhiên</button></div>
+<div class="seg" id="seg"><button data-m="sweet">😄 Vui vẻ</button><button data-m="tease">😜 Trêu mạnh</button><button data-m="mix" class="on">🎲 Ngẫu nhiên</button></div>
 <div class="scoops" id="scoops"></div>
-<div class="wish" id="wish">Chọn một viên kem bất kì nhé 👆</div>
+<div class="wish" id="wish" aria-live="polite">Chọn một viên kem bất kì nhé 👆</div>
 <p id="count">Đã mở 0/9 viên kem</p>
 </section>
 
-<section>
+<section id="g3">
 <h2>Lời nhắn từ Pam 💌</h2>
-<p>Cảm ơn các nàng vì đã làm cửa hàng luôn ngọt ngào và đầy tiếng cười. Chúc mọi người một ngày 20/10 thật rạng rỡ, thật nhiều quà và thật nhiều kem!</p>
+<p class="msg">Cảm ơn các nàng vì đã làm cửa hàng luôn ngọt ngào và đầy tiếng cười. Chúc mọi người một ngày 20/10 thật rạng rỡ, thật nhiều quà và thật nhiều kem!</p>
 <button id="boom">Bắn pháo kem 🎉</button>
 </section>
 </main>
+<div id="toast" role="status"></div>
+<div id="gift" role="dialog" aria-modal="true" aria-labelledby="gt"><div class="gbox"><div class="gico">🎁</div><h3 id="gt">Quà bất ngờ từ Pam!</h3><p id="gtxt"></p><button id="gok">Nhận quà 💖</button></div></div>
 <div id="float"><div class="bubble" id="fB"></div><div id="fM"></div></div>
 
 <script>
@@ -184,40 +256,68 @@ function say(t){hb.textContent=t;fb.textContent=t;fb.classList.add('show');clear
 function hop(el){el.classList.remove('hop');void el.offsetWidth;el.classList.add('hop');}
 const lines=["Hí hí, Pam đây! 💕","Chúc các nàng 20/10 ngọt như kem nè 🍨","Đừng chọc Pam nhột nha 🤭","Pam cũng muốn một ly Coit Tower 🗼","Hôm nay cười thật tươi, khách sẽ mua kem nhiều hơn đó 😆","Ai xinh nhất tiệm? Là bạn đó, đừng chối 😜","Pam đứng đây cả ngày mà không ai mời Pam ăn kem 🥲","Cherry trên đỉnh ly là Pam, còn bạn là cả ly kem 🍒"];
 [hm,fm].forEach(e=>e.addEventListener('click',()=>{say(R(lines));hop(e);}));
-addEventListener('pointermove',e=>{document.querySelectorAll('.pup').forEach(p=>{const r=p.ownerSVGElement.getBoundingClientRect();const dx=(e.clientX-(r.left+r.width/2))/innerWidth,dy=(e.clientY-(r.top+r.height/2))/innerHeight;p.style.transform=`translate(${dx*7}px,${dy*7}px)`;});});
+const eyeReset=()=>document.querySelectorAll('.pup').forEach(p=>p.style.transform='');
+addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;document.querySelectorAll('.pup').forEach(p=>{const r=p.ownerSVGElement.getBoundingClientRect();const dx=(e.clientX-(r.left+r.width/2))/innerWidth,dy=(e.clientY-(r.top+r.height/2))/innerHeight;p.style.transform=`translate(${dx*3}px,${dy*2}px)`;});});
+['scroll','touchstart'].forEach(ev=>addEventListener(ev,eyeReset,{passive:true}));
 function confetti(n=36){const s=['🍨','🌸','💖','🍒','✨','🍦','🎉'];for(let i=0;i<n;i++){const x=document.createElement('span');x.className='fx';x.textContent=R(s);x.style.left=Math.random()*100+'vw';x.style.animationDuration=2.5+Math.random()*2.5+'s';x.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(x);setTimeout(()=>x.remove(),6500);}}
-const sweet=["{n} ơi, chúc nàng luôn rạng rỡ như ly sundae phủ đầy whipping cream 🍨","Chúc {n} mỗi ngày đi làm đều là một ngày cười thật nhiều 💖","Chúc {n} luôn được yêu thương, ngọt như sốt dâu và ấm như sốt socola 🍓","Nụ cười của {n} làm khách quên cả xếp hàng chờ kem luôn đó 😊","Chúc {n} có thật nhiều ngày nghỉ thảnh thơi và lương thưởng đầy ly như Coit Tower 🗼","Cảm ơn {n} vì đã múc niềm vui cho khách hàng mỗi ngày 🥄","Chúc {n} gặp toàn điều ngọt ngào, còn muộn phiền thì cho tan chảy hết nha ☀️","20/10 này {n} xứng đáng được nhận hoa, quà và thật nhiều lời khen 🌸","Chúc team mình luôn đoàn kết, ca nào cũng vui, khách nào cũng dễ thương 🥰","{n} là topping đẹp nhất của cửa hàng, thiếu {n} là mất vị liền 🍒","Chúc {n} xinh đẹp, khỏe mạnh, tiền vào đầy ví và không bao giờ tan chảy 💸","Chúc {n} thành công, hạnh phúc và luôn có kem để ăn thỏa thích 🍦"];
+const sweet=["{n} ơi, 20/10 hôm nay được phép làm nữ hoàng, nhưng kem vẫn phải múc nha 👑🍨","Chúc {n} hôm nay cười nhiều đến mức khách quên luôn việc chê kem tan 😆","Chúc {n} ngày nào đi làm cũng có người khen, ngày nào về cũng có người chở 🛵😜","{n} mà nghỉ là ly Coit Tower tự nghiêng, tiệm tự sập, Pam tự khóc. Nên đừng nghỉ nha 🗼🥲","Chúc {n} lương lên nhanh hơn kem chảy, còn deadline thì chảy luôn đi 💸🫠","Hôm nay {n} có quyền nói “để mai tính”, trừ chuyện ăn kem 🍦😎","Chúc {n} gặp toàn khách dễ tính, hỏi một lần là chọn xong vị 🙏","Chúc {n} xinh đến mức gương cũng xin chụp chung 📸","20/10 này {n} được miễn dọn quầy… trong tưởng tượng của Pam thôi 🧽😝","Chúc {n} ví luôn đầy, bụng luôn no, điện thoại luôn 100% pin 🔋","Team mình xinh thế này, đứng chung ảnh là Pam bị lu mờ luôn đó ✨","Chúc {n} mỗi ca đều êm, ca nào đông khách thì kệ, có Pam ở đây 🫡"];
 const tease=["{n} ơi, chúc nàng múc kem tròn như trăng rằm, đừng méo như tâm trạng cuối ca nha 😝","Chúc {n} xinh như cherry trên đỉnh ly, nhưng đừng đỏ mặt khi bị khen nha 🍒😳","Chúc {n} không bị khách hỏi “có vị nào không ngọt không em?” 🤭","Chúc {n} hôm nay không ai nhờ đổi ca. Nếu có thì cứ nói “Pam bận ăn kem” 😎","Quản lí bảo ai cười nhiều nhất được thêm một viên kem. Cười lên nào {n}! 😆","Chúc {n} lương tăng nhanh hơn tốc độ kem tan giữa trưa nắng Sài Gòn 🥵","Cảnh báo: {n} xinh quá, cherry cũng ghen rồi đó 🍒💢","Chúc {n} nhớ lấy thêm muỗng cho khách thôi, đừng nhớ lấy thêm việc cho mình 🥄😏","Nếu {n} nghỉ làm là ly Coit Tower tự nghiêng liền à 🗼😂","Chúc {n} sớm có người yêu biết xếp hàng mua kem cho {n} ăn 🍦😜","Pam thì thầm: {n} dễ thương hơn cả Pam, nhưng đừng nói với ai nha 🤫","Hôm nay {n} được ăn kem không cần tính calo. Calo nghe xong cũng tan chảy rồi 🙈"];
 const wrong=["Ủa sai thứ tự rồi nè, Pam phạt đứng góc tủ kem 😝","Ơ kìa, ly Coit Tower khóc rồi đó 🥲","Bước này chưa tới! Đọc công thức đi nàng ơi 📖","Nhầm rồi! Khách đang nhìn kìa, bình tĩnh nào 😆","Hì, quản lí mà thấy chắc cười xỉu 🤭"];
 const L={sc:"1 pump sốt socola",ic:"1 viên kem (vani hoặc socola)",ss:"1 muỗng sốt dâu",ba:"4 lát chuối",al:"Hạnh nhân",wh:"Whipping cream",ri:"3 vòng sốt socola lên whip",cy:"Cherry",fl:"Lá cờ"};
-const S=[['sc',1],['ic',1],['ss',1],['ba',4],['al',1],['ic',1],['sc',1],['al',1],['ba',4],['wh',1],['ri',3],['al',1],['cy',1],['fl',1]];
-const P=[['sc','','🍫','Sốt socola'],['ic','va','🍦','Kem vani'],['ic','ch','🍨','Kem socola'],['ss','','🍓','Sốt dâu'],['ba','','🍌','Chuối'],['al','','🌰','Hạnh nhân'],['wh','','☁️','Whipping cream'],['ri','','🌀','Vòng socola'],['cy','','🍒','Cherry'],['fl','','🇺🇸','Lá cờ']];
+const S=[{sc:1},{ic:1},{ss:1},{ba:1,al:1},{ic:1},{sc:1,al:1,ba:1},{wh:1},{ri:1,al:1},{cy:1},{fl:1}];
+const P=[['sc','','🍫','Sốt socola'],['ic','va','🍦','Kem vani'],['ic','ch','🍨','Kem socola'],['ss','','🍓','Sốt dâu'],['ba','','🍌','Chuối ×4'],['al','','🌰','Hạnh nhân'],['wh','','☁️','Whipping cream'],['ri','','🌀','Vòng socola ×3'],['cy','','🍒','Cherry'],['fl','','🇺🇸','Lá cờ']];
 const stack=document.getElementById('stack'),stepsEl=document.getElementById('steps'),hint=document.getElementById('hint'),win=document.getElementById('win'),pal=document.getElementById('pal');
-let si=0,cnt=0;
-function draw(){stepsEl.innerHTML=S.map((s,i)=>`<li class="${i<si?'done':i==si?'now':''}">${i+1}. ${s[1]>1&&s[0]!=='ba'&&s[0]!=='ri'?s[1]+' ':''}${L[s[0]]}</li>`).join('');hint.textContent=si<S.length?'Pam đang chờ ly của bạn… 🍨':'Xong rồi, đỉnh quá! 🎉';}
+const bn=(x,y)=>`<ellipse cx="${x}" cy="${y}" rx="15" ry="12" fill="#f4d160" stroke="#d6aa38"/><ellipse cx="${x}" cy="${y}" rx="10.5" ry="8" fill="#ffeaa3"/><circle cx="${x}" cy="${y}" r="2" fill="#e3c25a"/>`;
+const am=a=>a.map(([x,y,r])=>`<ellipse cx="${x}" cy="${y}" rx="4.5" ry="2.4" transform="rotate(${r} ${x} ${y})" fill="#c58b4e" stroke="#9d6a30" stroke-width=".6"/>`).join('');
+const Q=id=>document.getElementById(id);
+Q('e-ba3').innerHTML=[[61,250],[129,250],[80,262],[110,262]].map(p=>bn(...p)).join('');
+Q('e-ba5').innerHTML=[[52,166],[138,166],[74,176],[116,176]].map(p=>bn(...p)).join('');
+Q('e-al3').innerHTML=am([[70,242,10],[95,252,-20],[120,244,25],[88,238,40],[108,258,0]]);
+Q('e-al5').innerHTML=am([[80,190,20],[108,194,-25],[95,184,5]]);
+Q('e-al7').innerHTML=am([[70,126,15],[120,124,-20],[86,106,30],[110,100,0],[95,86,10]]);
+function reveal(k,v){const g=Q('e-'+k+si);if(!g)return;if(k==='ic')g.querySelector('.scp').setAttribute('fill',v==='ch'?'url(#gch)':'url(#gva)');g.style.display='';g.classList.remove('pp');void g.getBoundingClientRect();g.classList.add('pp');if(k==='cy'){const w=Q('e-wf');w.style.display='';w.classList.add('pp');}}
+let si=0,cnt=0,rem=null;
+function draw(){hint.textContent=si<S.length?'Pam đang chờ ly của bạn… 🍨':'Xong rồi, đỉnh quá! 🎉';}
 P.forEach(([k,v,e,t])=>{const b=document.createElement('button');b.innerHTML=`<b>${e}</b>${t}`;b.onclick=()=>pick(k,v,b);pal.appendChild(b);});
-function pick(k,v,b){if(si>=S.length)return;if(k!==S[si][0]){b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');say(R(wrong));hop(fm);return;}
-const d=document.createElement('div');d.className='L '+k+(v?' '+v:'');stack.appendChild(d);cnt++;if(cnt>=S[si][1]){si++;cnt=0;}draw();
-if(si>=S.length){confetti(50);say("Hoàn thành Coit Tower! Pam chấm 10 điểm 💯");win.style.display='block';win.textContent="🎉 Ly Coit Tower hoàn hảo! Quà của bạn: "+R(sweet).replace(/\{n\}/g,'Bạn');hop(fm);}}
-document.getElementById('reset').onclick=()=>{stack.innerHTML='';si=0;cnt=0;win.style.display='none';draw();say("Làm ly mới nào, Pam đói rồi 🍦");};
+function pick(k,v,b){if(si>=S.length)return;if(!rem)rem={...S[si]};if(!(rem[k]>0)&&Object.keys(rem).every(x=>x==='al'||rem[x]<=0)&&S[si+1]&&S[si+1][k]>0){si++;rem={...S[si]};}if(!(rem[k]>0)){b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');say(R(wrong));hop(fm);return;}
+reveal(k,v);rem[k]--;if(Object.values(rem).every(x=>x<=0)){si++;rem=null;}draw();
+if(si>=S.length){confetti(50);say("Hoàn thành Coit Tower! Pam chấm 10 điểm 💯");win.style.display='block';win.textContent="🎉 Ly Coit Tower hoàn hảo! Quà của bạn: "+R(sweet).replace(/\{n\}/g,Q('name').value.trim()||'Bạn');hop(fm);}}
+document.getElementById('reset').onclick=()=>{document.querySelectorAll('#sv .e').forEach(e=>e.style.display='none');si=0;cnt=0;rem=null;win.style.display='none';draw();say("Làm ly mới nào, Pam đói rồi 🍦");};
 draw();
 const F=[["Vanilla","#f6e3b4"],["Chocolate","#7a4330"],["Very Strawberry","#ff9fb4"],["Thin Mint","#8fe0cf"],["Green Tea","#a8d67a"],["Mango Sherbet","#ffc531"],["Bubble Gum","#8fd2ff"],["Rocky Road","#9b5a3c"],["Cookie & Cream","#e8e4df"]];
-const FW=[[["Vani đơn giản mà ai cũng mê, giống {n} vậy đó: hiền, dịu dàng, ai gặp cũng thương 🍦","Chúc {n} cuộc sống nhẹ nhàng, bình yên và ngọt vừa đủ như vani 🤍"],["Chọn vani hả? Hiền khô vậy mà hết ca là {n} chạy nhanh nhất tiệm đó 😝","{n} chọn vani vì sợ chọn sai à? Yên tâm, vị nào Pam cũng chấm 10 điểm 🤭"]],
-[["Chúc {n} ngọt ngào đậm đà, đi đến đâu cũng được yêu mến như socola 🍫","Chúc mỗi ngày của {n} đều có một bất ngờ ngon như viên socola trong ly kem 💝"],["Chọn socola là hệ “ngoài lạnh trong nóng” rồi, {n} giận lên là Pam sợ liền 😳","Socola dễ gây nghiện, giống việc {n} cứ lén nhìn điện thoại giữa ca 📱😜"]],
-[["Chúc {n} luôn hồng hào, xinh tươi và đáng yêu như dâu mùa xuân 🍓","Chúc hạnh phúc của {n} chín mọng, ngọt lịm như dâu tây 💕"],["Dâu hả? Chắc {n} đang thầm thương ai rồi nè, má đỏ hết rồi kìa 🙈","{n} ngọt như dâu nhưng nhớ đừng chua với đồng nghiệp nha 😆"]],
-[["Chúc {n} luôn tươi mát, tràn năng lượng như bạc hà giữa trưa nắng 🌿","Chúc {n} cái đầu luôn mát, trái tim luôn ấm, ngày nào cũng sảng khoái 💚"],["Bạc hà mát lạnh, giống {n} mỗi khi nghe “em làm thêm chút nha” 🥶😂","Chọn bạc hà là có gu lắm, nhưng có người bảo giống kem đánh răng đó {n} 🪥🤣"]],
-[["Chúc {n} bình tĩnh, thanh thoát và luôn thong dong như tách trà xanh 🍵","Chúc {n} sức khỏe dồi dào, tâm hồn an yên, công việc suôn sẻ 🌱"],["Trà xanh hả? Coi chừng nha, nghe nói “trà xanh” là nguy hiểm lắm đó {n} 🍵😏","{n} chọn trà xanh để tỉnh táo cả ca đúng không? Pam biết hết nha ☕😜"]],
-[["Chúc {n} rực rỡ, vui tươi và tràn đầy nắng như xoài chín 🥭","Chúc {n} cả năm toàn chuyện vui, chua ngọt vừa đủ để thêm gia vị cho cuộc sống 🌞"],["Xoài chua chua ngọt ngọt, y chang tính {n} lúc đói bụng 😂","{n} chọn xoài là hệ “nắng như đổ lửa”, đứng gần là nóng cả quầy luôn 🔥🥭"]],
-[["Chúc {n} luôn vui vẻ, đáng yêu và đầy màu sắc như viên kẹo cao su 🫧","Chúc {n} giữ mãi trái tim trẻ thơ, cười thật to và sống thật vui 🎈"],["Bubble Gum xanh hồng sặc sỡ, giống outfit tâm trạng của {n} mỗi ngày 🌈😝","Chọn vị trẻ con vậy là {n} chưa chịu lớn rồi, Pam cũng vậy nè 🥹🍬"]],
-[["Chúc {n} đường đời nhiều thử thách nhưng toàn đoạn ngọt, vững vàng và mạnh mẽ 🍫","Chúc {n} gặp nhiều điều thú vị, như ăn Rocky Road, nhai tới đâu vui tới đó 🥜"],["Rocky Road là “đường đá gập ghềnh”, {n} chọn vị này chắc đang chạy KPI rồi 🏃‍♀️😆","Có hạt, có kẹo, có socola, {n} đúng là người tham ăn không bỏ vị nào 🤤"]],
-[["Chúc {n} cuộc sống hài hòa, như bánh quy và kem là cặp đôi hoàn hảo 🍪","Chúc {n} luôn có những người bạn đồng hành ngọt ngào bên cạnh 🥛"],["Cookie & Cream là vị “ai cũng thích”, {n} chọn an toàn quá nha 😎","Bánh quy vụn rơi đầy bàn, lát nữa {n} nhớ lau giùm Pam nha 🧹😝"]]];
+const FW=[[["Chọn vani là hệ “đơn giản mà vẫn chiếm spotlight”, đúng {n} luôn 😎","Chúc {n} hôm nay đơn giản thôi: ăn kem, được khen, về sớm 🍦"],["Chọn vani hả? Hiền khô vậy mà hết ca là {n} chạy nhanh nhất tiệm đó 😝","{n} chọn vani vì sợ chọn sai à? Yên tâm, vị nào Pam cũng chấm 10 điểm 🤭"]],
+[["Socola: ngoài lạnh trong nóng. Chúc {n} không ai dám chọc, trừ Pam 😤🍫","Chúc {n} đậm đà như socola, nhất là lúc đòi tăng lương 💪"],["Chọn socola là hệ “ngoài lạnh trong nóng” rồi, {n} giận lên là Pam sợ liền 😳","Socola dễ gây nghiện, giống việc {n} cứ lén nhìn điện thoại giữa ca 📱😜"]],
+[["Chúc {n} má hồng tự nhiên, khỏi cần phấn, khỏi cần ai chọc 🍓","Dâu hả? Chúc {n} ngọt vừa đủ, chua đúng lúc, đứng gần là khách mua thêm 😆"],["Dâu hả? Chắc {n} đang thầm thương ai rồi nè, má đỏ hết rồi kìa 🙈","{n} ngọt như dâu nhưng nhớ đừng chua với đồng nghiệp nha 😆"]],
+[["Chúc {n} đầu luôn mát, kể cả khi khách hỏi “kem này có đá không em” 🧊","Bạc hà: mát lạnh, tỉnh táo, hợp với người sống sót qua mọi ca đông 🌿😮‍💨"],["Bạc hà mát lạnh, giống {n} mỗi khi nghe “em làm thêm chút nha” 🥶😂","Chọn bạc hà là có gu lắm, nhưng có người bảo giống kem đánh răng đó {n} 🪥🤣"]],
+[["Chúc {n} bình tĩnh như trà xanh, kể cả khi máy làm kem lại dỗi 🍵","Trà xanh thì không cần, {n} chỉ cần xinh và giỏi là đủ rồi 😌"],["Trà xanh hả? Coi chừng nha, nghe nói “trà xanh” là nguy hiểm lắm đó {n} 🍵😏","{n} chọn trà xanh để tỉnh táo cả ca đúng không? Pam biết hết nha ☕😜"]],
+[["Chúc {n} rực rỡ như xoài chín, đi ngang là cả tiệm sáng lên ☀️","Xoài chua ngọt vừa vặn, giống {n}: dễ thương nhưng đừng thử chọc 🥭😏"],["Xoài chua chua ngọt ngọt, y chang tính {n} lúc đói bụng 😂","{n} chọn xoài là hệ “nắng như đổ lửa”, đứng gần là nóng cả quầy luôn 🔥🥭"]],
+[["Chọn Bubble Gum thì chúc {n} cứ trẻ con đi, làm người lớn mệt lắm rồi 🫧","Chúc {n} nhai kẹo thổi bong bóng giữa ca mà quản lí không thấy 🤫"],["Bubble Gum xanh hồng sặc sỡ, giống outfit tâm trạng của {n} mỗi ngày 🌈😝","Chọn vị trẻ con vậy là {n} chưa chịu lớn rồi, Pam cũng vậy nè 🥹🍬"]],
+[["Chúc {n} đường đời gập ghềnh cỡ nào cũng có hạt, có kẹo, có socola để ăn 🍫","Rocky Road: lổn nhổn đủ thứ mà vẫn ngon, đúng chất {n} 🤭"],["Rocky Road là “đường đá gập ghềnh”, {n} chọn vị này chắc đang chạy KPI rồi 🏃‍♀️😆","Có hạt, có kẹo, có socola, {n} đúng là người tham ăn không bỏ vị nào 🤤"]],
+[["Cookie & Cream là vị thắng mọi cuộc bình chọn, chúc {n} cũng vậy 🏆","Chúc {n} gặp đồng nghiệp tốt như bánh quy với kem: dính nhau cả ngày 🍪"],["Cookie & Cream là vị “ai cũng thích”, {n} chọn an toàn quá nha 😎","Bánh quy vụn rơi đầy bàn, lát nữa {n} nhớ lau giùm Pam nha 🧹😝"]]];
 let mode='mix',opened=new Set(),last='';
 const sc=document.getElementById('scoops');
 F.forEach((f,i)=>{const b=document.createElement('button');b.innerHTML=`<span class="sc3" style="background:${f[1]}"></span>${f[0]}`;b.onclick=()=>{const n=document.getElementById('name').value.trim()||'nàng';const fw=FW[i];const own=Math.random()<.6;const pool=own?(mode==='sweet'?fw[0]:mode==='tease'?fw[1]:[...fw[0],...fw[1]]):(mode==='sweet'?sweet:mode==='tease'?tease:[...sweet,...tease]);let w;do{w=R(pool)}while(w===last&&pool.length>1);last=w;
-document.getElementById('wish').textContent=(own?'Vị '+f[0]+': ':'')+w.replace(/\{n\}/g,n);b.classList.remove('open');void b.offsetWidth;b.classList.add('open');opened.add(i);document.getElementById('count').textContent=`Đã mở ${opened.size}/9 viên kem`;say((FW[i][1].includes(w)||tease.includes(w))?"Hihi, lời chúc này hơi mặn đó nha 😜":"Ngọt quá trời luôn 🥰");
+document.getElementById('wish').textContent=(own?'Vị '+f[0]+': ':'')+w.replace(/\{n\}/g,n);b.classList.remove('open');void b.offsetWidth;b.classList.add('open');opened.add(i);document.getElementById('count').textContent=`Đã mở ${opened.size}/9 viên kem`;say((FW[i][1].includes(w)||tease.includes(w))?"Hihi, lời chúc này hơi mặn đó nha 😜":"Hí hí, Pam chấm lời chúc này 10 điểm 😎");
 if(opened.size===9){opened.clear();confetti(40);document.getElementById('count').textContent="Mở đủ 9 viên rồi! Pam thưởng thêm một cái ôm 🤗";}};sc.appendChild(b);});
 document.querySelectorAll('#seg button').forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll('#seg button').forEach(x=>x.classList.toggle('on',x===b));});
 document.getElementById('boom').onclick=()=>{confetti(60);say("Chúc mừng 20/10 các nàng của Swensen’s! 💖");hop(fm);};
+
+/* ===== nâng cấp ===== */
+const tw=m=>{const t=Q('toast');t.textContent=m;t.classList.add('show');clearTimeout(tw.t);tw.t=setTimeout(()=>t.classList.remove('show'),2200);};
+try{const v=localStorage.getItem('pam-name');if(v)Q('name').value=v;}catch(e){}
+Q('name').addEventListener('input',e=>{try{localStorage.setItem('pam-name',e.target.value.trim())}catch(_){}});
+const _draw=draw;draw=()=>{_draw();Q('pbar').style.width=(si/S.length*100)+'%';Q('prog').setAttribute('aria-valuenow',si);};draw();
+Q('scoops').addEventListener('click',()=>{const w=Q('wish');w.classList.remove('flip');void w.offsetWidth;w.classList.add('flip');});
+const gifts=["Phiếu “ăn kem không tính calo” 1 lần, có hiệu lực ngay bây giờ 🍦","Phiếu “được khen 3 câu” từ bất kỳ ai bạn chọn 🥰","Phiếu “từ chối đổi ca” 1 lần, quản lí cũng phải cười trừ 😎","Phiếu “nghỉ giải lao thêm 5 phút” (nhớ xin quản lí nha) ☕","Phiếu “Pam múc giùm 1 ly Coit Tower” 🗼","Phiếu “hôm nay mọi chuyện đều ổn, cứ cười thật tươi” 🌸","Phiếu đặc biệt “quản lí không được nhắc chuyện KPI” trong 24 giờ 🙅‍♀️","Phiếu “chọn nhạc cả tiệm” 1 bài, kể cả bài Pam không thích 🎵","Phiếu “được Pam bưng giùm ly kem tới tận tay” 🍨","Phiếu “đòi quản lí khen công khai” 1 lần, khen phải có tâm 📣","Phiếu “đi về đúng giờ, không ai được hỏi ‘còn việc không em?’” ⏰","Phiếu VIP “xin thêm topping miễn phí” cho một ly kem bất kỳ 🍒","Phiếu “ngủ nướng thêm 10 phút”, Pam đứng ra bảo lãnh 😴"];
+let taps=0;
+hm.addEventListener('click',()=>{taps++;if(taps===2)say("Chạm thêm một lần nữa đi, Pam giấu phiếu đặc biệt trong mũ đó 🤫");if(taps>=3){taps=0;Q('gtxt').textContent=R(gifts);Q('gift').classList.add('on');confetti(45);Q('gok').focus();}});
+Q('gok').onclick=()=>Q('gift').classList.remove('on');
+Q('gift').addEventListener('click',e=>{if(e.target===Q('gift'))Q('gift').classList.remove('on');});
+addEventListener('keydown',e=>{if(e.key==='Escape')Q('gift').classList.remove('on');});
+hm.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();hm.click();}});
+(()=>{const d=new Date(),y=d.getFullYear(),today=d.getMonth()===9&&d.getDate()===20;let t=new Date(y,9,20);if(!today&&d>t)t=new Date(y+1,9,20);const n=Math.ceil((t-d)/864e5);Q('dayline').textContent=today?'Hôm nay đúng ngày 20/10, chúc các nàng một ngày thật xinh! 🎉':`Còn ${n} ngày nữa là tới 20/10 💐`;if(today&&!matchMedia('(prefers-reduced-motion:reduce)').matches)setTimeout(()=>confetti(40),700);})();
+let idle=Date.now();['pointerdown','keydown','scroll'].forEach(ev=>addEventListener(ev,()=>idle=Date.now(),{passive:true}));
+setInterval(()=>{if(!document.hidden&&Date.now()-idle>20000){say(R(lines));idle=Date.now();}},5000);
 </script>
 </body>
 </html>
